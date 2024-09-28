@@ -5,42 +5,116 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  min-height: 100vh;
+}
+
 header {
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 0.5fr;
   padding: 30px 60px;
   /* background-color: #d4d4d4; */
 }
-header h1{
+header h1 {
   font-size: 40px;
   font-weight: 800;
-   background: linear-gradient(to right, #773872, #F6934E);           /*   #C23385, #F6934E */
+  background: linear-gradient(to right, #773872, #c23385, #c23385, #f6934e);
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0 60px;
   /* border: 1px solid black; */
 }
-nav{
+header h1 span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #f6934e;
+  display: inline-block;
+}
+nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
   /* background-color: #bfbfbf; */
   /* border: 1px solid black; */
-
 }
-nav a{
+nav a {
   text-decoration: none;
   color: #979797;
   font-size: 20px;
 }
-header button{
+header button {
   display: block;
   width: 150px;
   border-radius: 50px;
   border: none;
   margin: 0 60px;
-  background: linear-gradient(to right, #773872,  #C23385, #C23385, #F6934E);
+  background: linear-gradient(to right, #773872, #c23385, #c23385, #f6934e);
   color: white;
-  font-size: 18 px;          
+  font-size: 18 px;
+  cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: #979797; */
+  padding: 30px 60px;
+  min-height: calc(100vh - 10);
+  align-items: center;
+  /* gap: 100px; */
+}
+main div h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #3c3c3c;
+  max-width: 500px;
+}
+main div p {
+  font-size: 20px;
+  max-width: 600px;
+  color: #3c3c3c;
+  margin: 20px 0;
+}
+
+main button {
+  display: block;
+  width: 160px;
+  border-radius: 50px;
+  border: 2px solid #e2e2e2;
+  background: linear-gradient(to right, #773872, #c23385, #c23385, #f6934e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 18 px;
+  padding: 20px;
+  cursor: pointer;
+}
+main button i {
+  margin-right: 10px;
+}
+
+main img {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+footer {
+  /* background-color: #b8b8b8; */
+  height: 53px;
+  display: grid;
+  align-items: center;
+  padding: 0px 60px;
+  overflow: hidden;
+}
+footer a {
+  text-decoration: none;
+  color: #979797;
+  font-size: 20px;
+  margin: 0 20px;
 }
