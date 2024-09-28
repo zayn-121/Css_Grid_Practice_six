@@ -107,7 +107,7 @@ main img {
 footer {
   /* background-color: #b8b8b8; */
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 4fr;
   height: 53px;
   align-items: center;
   padding: 0px 60px;
