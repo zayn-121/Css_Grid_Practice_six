@@ -106,15 +106,22 @@ main img {
 
 footer {
   /* background-color: #b8b8b8; */
-  height: 53px;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 53px;
   align-items: center;
   padding: 0px 60px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 footer a {
   text-decoration: none;
-  color: #979797;
+  color: #cbcbcb;
   font-size: 20px;
   margin: 0 20px;
+}
+
+footer span {
+  color: #cbcbcb;
+  font-size: 20px;
 }
